@@ -8,13 +8,12 @@ import 'screens/login_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  String? startupError;
-  try {
-    await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  } catch (error) {
-    startupError = error.toString();
-  }
-  runApp(ReturnIoApp(startupError: startupError));
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  runApp(const MyApp());
 }
 
 class ReturnIoApp extends StatefulWidget {
