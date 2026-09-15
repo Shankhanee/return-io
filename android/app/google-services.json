@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615835764212",
+    "project_id": "return-io",
+    "storage_bucket": "return-io.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615835764212:android:7b2d4bebc63be030da25a1",
+        "android_client_info": {
+          "package_name": "com.example.return_io"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-BJGXgCO2lJHS-I5_oJIECO7ui3qDXe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
