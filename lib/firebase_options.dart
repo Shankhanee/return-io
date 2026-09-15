@@ -21,10 +21,7 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
@@ -52,6 +49,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'return-io.firebasestorage.app',
     measurementId: 'G-CNMZVYR99G',
   );
+
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDkjMpAafuiuasOdnPRSQZw-J4CIHDyA2o',
     appId: '1:615835764212:ios:acf61f9898d107ccda25a1',
@@ -60,7 +58,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'return-io.firebasestorage.app',
     iosBundleId: 'com.example.returnIo',
   );
-
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyDkjMpAafuiuasOdnPRSQZw-J4CIHDyA2o',
     appId: '1:615835764212:ios:acf61f9898d107ccda25a1',
@@ -78,5 +75,12 @@ class DefaultFirebaseOptions {
     authDomain: 'return-io.firebaseapp.com',
     storageBucket: 'return-io.firebasestorage.app',
     measurementId: 'G-LGCDS8426F',
+  );
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyD-BJGXgCO2lJHS-I5_oJIECO7ui3qDXe0',
+    appId: '1:615835764212:android:7b2d4bebc63be030da25a1',
+    messagingSenderId: '615835764212',
+    projectId: 'return-io',
+    storageBucket: 'return-io.firebasestorage.app',
   );
 }
